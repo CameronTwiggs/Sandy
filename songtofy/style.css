@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+form ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+form ol li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 24em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+form ol li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+	background-color: rgb(186,85,211);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+form ol li:hover {
+    color: black;
+}
+
+form ol li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+form ol li span:nth-child(1) {
+    --n: 1;
+}
+
+form ol li span:nth-child(2) {
+    --n: 2;
+}
+
+form ol li span:nth-child(3) {
+    --n: 3;
+}
+
+form ol li span:nth-child(4) {
+    --n: 4;
+}

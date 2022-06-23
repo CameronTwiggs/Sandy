@@ -1,4 +1,4 @@
-barray = [9,5,9,5,5,5,5,5,5,5]
+barray = [1,2,1,2,1]
 
 
 function boom (arr) {
